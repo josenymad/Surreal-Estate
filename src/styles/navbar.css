@@ -1,0 +1,15 @@
+.navbar-links__item {
+    margin: 0px;
+    padding: 0.5em;
+    display: inline-block;
+}
+
+.navbar-logo {
+    width: 9em;
+    height: auto;
+}
+
+.navbar-links {
+    margin: 0px;
+    padding: 0px;
+}
