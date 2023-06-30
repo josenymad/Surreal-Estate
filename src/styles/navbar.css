@@ -1,15 +1,15 @@
-.navbar-links__item {
-    margin: 0px;
-    padding: 0.5em;
-    display: inline-block;
-}
-
-.navbar-logo {
+.navbar__logo {
     width: 9em;
     height: auto;
 }
 
-.navbar-links {
+.navbar__links {
     margin: 0px;
     padding: 0px;
+}
+
+.navbar__links__item {
+    margin: 0px;
+    padding: 0.5em;
+    display: inline-block;
 }
