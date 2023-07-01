@@ -1,0 +1,22 @@
+.add-property__header {
+    font-weight: 400;
+}
+
+.add-property__form {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    align-items: flex-start;
+    margin: auto;
+    justify-content: space-around;
+    height: 45vh;
+}
+
+.form__input {
+    margin-left: 0.5rem;
+    padding: 0.3em;
+}
+
+button {
+    align-self: center;
+}
