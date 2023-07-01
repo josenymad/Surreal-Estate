@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/add-property.css";
+import postPropertyDetails from "../requests/postProperty";
 
 const AddProperties = () => {
   const initialState = {
@@ -16,6 +17,7 @@ const AddProperties = () => {
   const [fields, setFields] = useState(initialState.fields);
   const handleAddProperty = (event) => {
     event.preventDefault();
+    postPropertyDetails(fields);
   };
   const handleFieldChange = (event) => {
     setFields({ ...fields, [event.target.name]: event.target.value });
@@ -23,9 +25,7 @@ const AddProperties = () => {
 
   return (
     <div className="add-property">
-      <h3 className="add-property__header">
-        Tell us about the new property you&apos;d like to add:
-      </h3>
+      <h3 className="add-property__header">Tell us about your new property:</h3>
       <form onSubmit={handleAddProperty} className="add-property__form">
         <label htmlFor="title">
           Property Title:
@@ -47,6 +47,7 @@ const AddProperties = () => {
             onChange={handleFieldChange}
             className="form__input"
           >
+            <option value="">Please select an option</option>
             <option value="Flat">Flat</option>
             <option value="Detached">Detached</option>
             <option value="Semi-Detached">Semi-Detached</option>
@@ -98,6 +99,7 @@ const AddProperties = () => {
             onChange={handleFieldChange}
             className="form__input"
           >
+            <option value="">Please select an option</option>
             <option value="Manchester">Manchester</option>
             <option value="Leeds">Leeds</option>
             <option value="Sheffield">Sheffield</option>
@@ -111,7 +113,7 @@ const AddProperties = () => {
             name="email"
             value={fields.email}
             onChange={handleFieldChange}
-            placeholder="contact@gmail.com"
+            placeholder="contact@email.com"
             className="form__input"
           />
         </label>
