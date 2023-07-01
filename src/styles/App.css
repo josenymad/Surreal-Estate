@@ -3,12 +3,8 @@
 }
 
 .App__logo {
-    width: 9em;
+    width: 1.5em;
     height: auto;
 }
 
-.App__container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
