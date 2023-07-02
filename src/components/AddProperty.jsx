@@ -47,7 +47,7 @@ const AddProperties = () => {
             onChange={handleFieldChange}
             className="form__input"
           >
-            <option value="">Please select an option</option>
+            <option value="">Please select</option>
             <option value="Flat">Flat</option>
             <option value="Detached">Detached</option>
             <option value="Semi-Detached">Semi-Detached</option>
@@ -99,7 +99,7 @@ const AddProperties = () => {
             onChange={handleFieldChange}
             className="form__input"
           >
-            <option value="">Please select an option</option>
+            <option value="">Please select</option>
             <option value="Manchester">Manchester</option>
             <option value="Leeds">Leeds</option>
             <option value="Sheffield">Sheffield</option>
