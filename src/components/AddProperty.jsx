@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/add-property.css";
 import postPropertyDetails from "../requests/postProperty";
 
-const AddProperties = () => {
+const AddProperty = () => {
   const initialState = {
     fields: {
       title: "",
@@ -125,4 +125,4 @@ const AddProperties = () => {
   );
 };
 
-export default AddProperties;
+export default AddProperty;

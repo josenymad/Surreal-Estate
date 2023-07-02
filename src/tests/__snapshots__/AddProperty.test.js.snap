@@ -1,0 +1,172 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Add Property renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="add-property"
+  >
+    <h3
+      class="add-property__header"
+    >
+      Tell us about your new property:
+    </h3>
+    <form
+      class="add-property__form"
+    >
+      <label
+        for="title"
+      >
+        Property Title:
+        <input
+          class="form__input"
+          id="title"
+          name="title"
+          placeholder="2 bedroom flat"
+          value=""
+        />
+      </label>
+      <label
+        for="type"
+      >
+        Property Type:
+        <select
+          class="form__input"
+          id="type"
+          name="type"
+        >
+          <option
+            value=""
+          >
+            Please select
+          </option>
+          <option
+            value="Flat"
+          >
+            Flat
+          </option>
+          <option
+            value="Detached"
+          >
+            Detached
+          </option>
+          <option
+            value="Semi-Detached"
+          >
+            Semi-Detached
+          </option>
+          <option
+            value="Terraced"
+          >
+            Terraced
+          </option>
+          <option
+            value="End of Terrace"
+          >
+            End of Terrace
+          </option>
+          <option
+            value="Cottage"
+          >
+            Cottage
+          </option>
+          <option
+            value="Bungalow"
+          >
+            Bungalow
+          </option>
+        </select>
+      </label>
+      <label
+        for="bedrooms"
+      >
+        Number of bedrooms:
+        <input
+          class="form__input"
+          id="bedrooms"
+          name="bedrooms"
+          placeholder="2"
+          value=""
+        />
+      </label>
+      <label
+        for="bathrooms"
+      >
+        Number of bathrooms:
+        <input
+          class="form__input"
+          id="bathrooms"
+          name="bathrooms"
+          placeholder="1"
+          value=""
+        />
+      </label>
+      <label
+        for="price"
+      >
+        Property value:
+        <input
+          class="form__input"
+          id="price"
+          name="price"
+          placeholder="£150,000"
+          value=""
+        />
+      </label>
+      <label
+        for="city"
+      >
+        City:
+        <select
+          class="form__input"
+          id="city"
+          name="city"
+        >
+          <option
+            value=""
+          >
+            Please select
+          </option>
+          <option
+            value="Manchester"
+          >
+            Manchester
+          </option>
+          <option
+            value="Leeds"
+          >
+            Leeds
+          </option>
+          <option
+            value="Sheffield"
+          >
+            Sheffield
+          </option>
+          <option
+            value="Liverpool"
+          >
+            Liverpool
+          </option>
+        </select>
+      </label>
+      <label
+        for="email"
+      >
+        Email:
+        <input
+          class="form__input"
+          id="email"
+          name="email"
+          placeholder="contact@email.com"
+          value=""
+        />
+      </label>
+      <button
+        class="add-property__form__button"
+        type="submit"
+      >
+        Add
+      </button>
+    </form>
+  </div>
+</DocumentFragment>
+`;

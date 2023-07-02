@@ -21,9 +21,9 @@ describe("NavBar", () => {
       </MemoryRouter>
     );
 
-    const viewProperties = screen.getByText("View Properties");
+    const viewPropertiesLink = screen.getByText("View Properties");
 
-    expect(viewProperties).toBeInTheDocument();
+    expect(viewPropertiesLink).toBeInTheDocument();
   });
 
   it("renders 'Add a Property'", () => {
@@ -33,9 +33,9 @@ describe("NavBar", () => {
       </MemoryRouter>
     );
 
-    const addProperty = screen.getByText("Add a Property");
+    const addPropertyLink = screen.getByText("Add a Property");
 
-    expect(addProperty).toBeInTheDocument();
+    expect(addPropertyLink).toBeInTheDocument();
   });
 
   it("renders two links", () => {
