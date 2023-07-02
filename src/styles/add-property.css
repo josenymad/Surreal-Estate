@@ -20,4 +20,16 @@ button {
     align-self: center;
     font-weight: 600;
     margin-top: 1em;
+    padding: 0.6em;
+    background-color: black;
+    color: white;
+    border-style: none;
+    border-radius: 3px;
+}
+
+.alert {
+    align-self: center;
+    margin-top: 1em;
+    padding: 0.3em;
+    border-radius: 3px;
 }

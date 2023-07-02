@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/add-property.css";
 import postPropertyDetails from "../requests/postProperty";
+import Alert from "./Alert";
 
 const AddProperty = () => {
   const initialState = {
@@ -13,11 +14,19 @@ const AddProperty = () => {
       city: "",
       email: "",
     },
+    alert: {
+      message: "",
+      isSuccess: false,
+    },
   };
+
   const [fields, setFields] = useState(initialState.fields);
+  const [alert, setAlert] = useState(initialState.alert);
+
   const handleAddProperty = (event) => {
     event.preventDefault();
-    postPropertyDetails(fields);
+    setAlert({ message: "", isSuccess: false });
+    postPropertyDetails(fields, setAlert);
   };
   const handleFieldChange = (event) => {
     setFields({ ...fields, [event.target.name]: event.target.value });
@@ -120,6 +129,11 @@ const AddProperty = () => {
         <button type="submit" className="add-property__form__button">
           Add
         </button>
+        <Alert
+          message={alert.message}
+          success={alert.isSuccess}
+          className="alert"
+        />
       </form>
     </div>
   );

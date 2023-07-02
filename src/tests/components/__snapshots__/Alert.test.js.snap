@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alert does not render if there is no message 1`] = `<DocumentFragment />`;

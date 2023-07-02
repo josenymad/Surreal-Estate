@@ -1,0 +1,9 @@
+.alert {
+    background-color: lightpink;
+    color: red;
+}
+
+.alert-success {
+    background-color: lightgreen;
+    color: green;
+}
