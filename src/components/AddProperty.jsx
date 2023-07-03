@@ -95,7 +95,7 @@ const AddProperty = () => {
             name="price"
             value={fields.price}
             onChange={handleFieldChange}
-            placeholder="£150,000"
+            placeholder="150000"
             className="form__input"
           />
         </label>

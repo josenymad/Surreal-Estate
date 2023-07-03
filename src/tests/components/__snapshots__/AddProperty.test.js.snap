@@ -108,7 +108,7 @@ exports[`Add Property renders correctly 1`] = `
           class="form__input"
           id="price"
           name="price"
-          placeholder="£150,000"
+          placeholder="150000"
           value=""
         />
       </label>

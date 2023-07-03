@@ -1,0 +1,14 @@
+.property-card__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: fit-content;
+    margin: auto;
+}
+
+.property-card__list__item {
+    list-style: none;
+    margin: 0.6em;
+}
+
+
