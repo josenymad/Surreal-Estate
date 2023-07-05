@@ -11,9 +11,15 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "../styles/property-card.css";
 
-const PropertyCard = (props) => {
-  const { title, type, bedrooms, bathrooms, price, city, email } = props;
-
+const PropertyCard = ({
+  title,
+  type,
+  bedrooms,
+  bathrooms,
+  price,
+  city,
+  email,
+}) => {
   return (
     <div className="property-card">
       <ul className="property-card__list">
@@ -27,9 +33,7 @@ const PropertyCard = (props) => {
         </li>
         <li className="property-card__list__item">
           <FontAwesomeIcon icon={faBed} className="icon" />
-          {` ${bedrooms}`}
-        </li>
-        <li className="property-card__list__item">
+          {` ${bedrooms} | `}
           <FontAwesomeIcon icon={faBath} className="icon" />
           {` ${bathrooms}`}
         </li>
@@ -42,10 +46,10 @@ const PropertyCard = (props) => {
           {` ${city}`}
         </li>
         <li className="property-card__list__item">
-          <a href={`mailto:${email}`}>
+          <a href={`mailto:${email}`} className="email-link">
             <FontAwesomeIcon icon={faEnvelope} />
+            {" Email"}
           </a>
-          {" Email"}
         </li>
       </ul>
     </div>

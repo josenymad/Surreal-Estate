@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/add-property.css";
-import postPropertyDetails from "../requests/postProperty";
+import postPropertyDetails from "../requests/postPropertyDetails";
 import Alert from "./Alert";
 
 const AddProperty = () => {

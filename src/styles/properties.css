@@ -1,3 +1,10 @@
 .properties__header {
     font-weight: 400;
 }
+
+.properties__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: start;
+    row-gap: 3em;
+}
