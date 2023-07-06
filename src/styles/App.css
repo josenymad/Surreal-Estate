@@ -2,9 +2,7 @@
   text-align: center;
 }
 
-.App__logo {
-    width: 1.5em;
-    height: auto;
+.App__header__logo {
+  height: 60px;
+  width: auto;
 }
-
-

@@ -9,8 +9,9 @@ import logo from "../images/logo.jpeg";
 const App = () => {
   return (
     <div className="App">
-      <h1>
-        Surreal <img src={logo} alt="Logo" className="App__logo" /> Estate
+      <h1 className="App__header">
+        Surreal <img src={logo} alt="Logo" className="App__header__logo" />{" "}
+        Estate
       </h1>
       <NavBar />
       <Routes>

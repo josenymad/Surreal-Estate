@@ -129,11 +129,7 @@ const AddProperty = () => {
         <button type="submit" className="add-property__form__button">
           Add
         </button>
-        <Alert
-          message={alert.message}
-          success={alert.isSuccess}
-          className="alert"
-        />
+        <Alert message={alert.message} success={alert.isSuccess} />
       </form>
     </div>
   );

@@ -23,11 +23,13 @@ const Properties = () => {
   return (
     <div className="properties">
       <h3 className="properties__header">Properties Page</h3>
-      <CityFilter setCity={setCity} />
+      <div className="city-filter">
+        <CityFilter setCity={setCity} />
+      </div>
       {properties.length > 0 ? (
         <div className="properties__container">
           {properties.map((property) => (
-            <div key={property._id} className="property">
+            <div key={property._id} className="property-card">
               <PropertyCard {...property} />
             </div>
           ))}
@@ -37,11 +39,7 @@ const Properties = () => {
           {`Sorry, there are no available properties in ${city}`}
         </p>
       )}
-      <Alert
-        message={alert.message}
-        success={alert.isSuccess}
-        className="alert"
-      />
+      <Alert message={alert.message} success={alert.isSuccess} />
     </div>
   );
 };

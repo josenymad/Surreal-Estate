@@ -10,6 +10,7 @@ import {
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import "../styles/property-card.css";
+import logo from "../images/logo.jpeg";
 
 const PropertyCard = ({
   title,
@@ -24,25 +25,28 @@ const PropertyCard = ({
     <div className="property-card">
       <ul className="property-card__list">
         <li className="property-card__list__item">
+          <img src={logo} alt="Logo" className="property-card__list__logo" />
+        </li>
+        <li className="property-card__list__item">
           <FontAwesomeIcon icon={faCircleInfo} />
           {` ${title}`}
         </li>
         <li className="property-card__list__item">
-          <FontAwesomeIcon icon={faHouse} className="icon" />
+          <FontAwesomeIcon icon={faHouse} />
           {` ${type}`}
         </li>
         <li className="property-card__list__item">
-          <FontAwesomeIcon icon={faBed} className="icon" />
+          <FontAwesomeIcon icon={faBed} />
           {` ${bedrooms} bed | `}
-          <FontAwesomeIcon icon={faBath} className="icon" />
+          <FontAwesomeIcon icon={faBath} />
           {` ${bathrooms} bath`}
         </li>
         <li className="property-card__list__item">
-          <FontAwesomeIcon icon={faSterlingSign} className="icon" />
+          <FontAwesomeIcon icon={faSterlingSign} />
           {` ${price}`}
         </li>
         <li className="property-card__list__item">
-          <FontAwesomeIcon icon={faLocationDot} className="icon" />
+          <FontAwesomeIcon icon={faLocationDot} />
           {` ${city}`}
         </li>
         <li className="property-card__list__item">

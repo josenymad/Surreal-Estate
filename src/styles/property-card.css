@@ -11,6 +11,11 @@
     margin: 0.6em;
 }
 
+.property-card__list__logo {
+    height: 150px;
+    width: auto;    
+}
+
 .email-link {
     text-decoration: none;
 }
