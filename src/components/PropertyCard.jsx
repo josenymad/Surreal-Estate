@@ -33,9 +33,9 @@ const PropertyCard = ({
         </li>
         <li className="property-card__list__item">
           <FontAwesomeIcon icon={faBed} className="icon" />
-          {` ${bedrooms} | `}
+          {` ${bedrooms} bed | `}
           <FontAwesomeIcon icon={faBath} className="icon" />
-          {` ${bathrooms}`}
+          {` ${bathrooms} bath`}
         </li>
         <li className="property-card__list__item">
           <FontAwesomeIcon icon={faSterlingSign} className="icon" />

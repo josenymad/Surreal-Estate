@@ -6,5 +6,17 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: start;
-    row-gap: 3em;
+    row-gap: 1.5em;
+}
+
+@media screen and (max-width: 800px) {
+    .properties__container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .properties__container {
+        grid-template-columns: 1fr;
+    }
 }

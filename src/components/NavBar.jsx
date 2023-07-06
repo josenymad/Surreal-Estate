@@ -7,7 +7,7 @@ const NavBar = () => {
     <div className="navbar">
       <ul className="navbar__links">
         <li className="navbar__links__item">
-          <Link to="/">View Properties</Link>
+          <Link to="/">View all Properties</Link>
         </li>
         <li className="navbar__links__item">
           <Link to="/add-property">Add a Property</Link>

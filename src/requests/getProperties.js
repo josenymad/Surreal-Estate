@@ -1,7 +1,11 @@
 import axios from "axios";
 
-const getProperties = async (setProperties, setAlert) => {
-  const endpoint = "http://localhost:3000/api/v1/PropertyListing";
+const getProperties = async (setProperties, setAlert, search) => {
+  let endpoint = "http://localhost:3000/api/v1/PropertyListing";
+
+  if (search) {
+    endpoint = `http://localhost:3000/api/v1/PropertyListing${search}`;
+  }
 
   try {
     const { data } = await axios.get(endpoint);
