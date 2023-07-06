@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 import PropertyCard from "./PropertyCard";
 import getProperties from "../requests/getProperties";
 import Alert from "./Alert";
-import CityFilter from "./CityFilter";
+import FilterSortSearch from "./FilterSortSearch";
 
 const Properties = () => {
   const [properties, setProperties] = useState([]);
@@ -24,7 +24,7 @@ const Properties = () => {
     <div className="properties">
       <h3 className="properties__header">Properties Page</h3>
       <div className="city-filter">
-        <CityFilter setCity={setCity} />
+        <FilterSortSearch setCity={setCity} />
       </div>
       {properties.length > 0 ? (
         <div className="properties__container">

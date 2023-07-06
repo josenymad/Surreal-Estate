@@ -54,31 +54,43 @@ exports[`App renders correctly 1`] = `
         class="city-filter"
       >
         <div
-          class="CityFilter"
+          class="filter-sort-search"
         >
           <a
             class="city-filter__link"
-            href="/?query={\\"city\\": \\"Manchester\\" }"
+            href="/?query={\\"city\\":\\"Manchester\\"}"
           >
             Manchester
           </a>
           <a
             class="city-filter__link"
-            href="/?query={\\"city\\": \\"Leeds\\" }"
+            href="/?query={\\"city\\":\\"Leeds\\"}"
           >
             Leeds
           </a>
           <a
             class="city-filter__link"
-            href="/?query={\\"city\\": \\"Sheffield\\" }"
+            href="/?query={\\"city\\":\\"Sheffield\\"}"
           >
             Sheffield
           </a>
           <a
             class="city-filter__link"
-            href="/?query={\\"city\\": \\"Liverpool\\" }"
+            href="/?query={\\"city\\":\\"Liverpool\\"}"
           >
             Liverpool
+          </a>
+          <a
+            class="city-filter__link"
+            href="/?sort={\\"price\\":1}"
+          >
+            Low to High
+          </a>
+          <a
+            class="city-filter__link"
+            href="/?sort={\\"price\\":-1}"
+          >
+            High to Low
           </a>
         </div>
       </div>

@@ -1,9 +1,9 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
-import CityFilter from "../../components/CityFilter";
+import CityFilter from "../../components/FilterSortSearch";
 
-describe("City Filter", () => {
+describe("Filter, Sort, Search", () => {
   it("renders correctly", () => {
     const { asFragment } = render(
       <MemoryRouter>
@@ -14,7 +14,7 @@ describe("City Filter", () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it("renders 4 city links", () => {
+  it("renders 6 links", () => {
     render(
       <MemoryRouter>
         <CityFilter />
@@ -23,6 +23,6 @@ describe("City Filter", () => {
 
     const links = screen.getAllByRole("link");
 
-    expect(links).toHaveLength(4);
+    expect(links).toHaveLength(6);
   });
 });

@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filter, Sort, Search renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="filter-sort-search"
+  >
+    <a
+      class="city-filter__link"
+      href="/?query={\\"city\\":\\"Manchester\\"}"
+    >
+      Manchester
+    </a>
+    <a
+      class="city-filter__link"
+      href="/?query={\\"city\\":\\"Leeds\\"}"
+    >
+      Leeds
+    </a>
+    <a
+      class="city-filter__link"
+      href="/?query={\\"city\\":\\"Sheffield\\"}"
+    >
+      Sheffield
+    </a>
+    <a
+      class="city-filter__link"
+      href="/?query={\\"city\\":\\"Liverpool\\"}"
+    >
+      Liverpool
+    </a>
+    <a
+      class="city-filter__link"
+      href="/?sort={\\"price\\":1}"
+    >
+      Low to High
+    </a>
+    <a
+      class="city-filter__link"
+      href="/?sort={\\"price\\":-1}"
+    >
+      High to Low
+    </a>
+  </div>
+</DocumentFragment>
+`;
