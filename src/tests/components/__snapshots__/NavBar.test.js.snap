@@ -14,7 +14,7 @@ exports[`NavBar renders correctly 1`] = `
         <a
           href="/"
         >
-          View Properties
+          View all Properties
         </a>
       </li>
       <li

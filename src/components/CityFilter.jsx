@@ -13,7 +13,7 @@ const CityFilter = ({ setCity }) => {
             key={city}
             className="city-filter__link"
             to={`/?query={"city": "${city}" }`}
-            onClick={setCity(city)}
+            onClick={() => setCity(city)}
           >
             {city}
           </Link>

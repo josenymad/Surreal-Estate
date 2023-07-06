@@ -11,6 +11,15 @@ exports[`PropertyCard renders correctly 1`] = `
       <li
         class="property-card__list__item"
       >
+        <img
+          alt="Logo"
+          class="property-card__list__logo"
+          src="logo.jpeg"
+        />
+      </li>
+      <li
+        class="property-card__list__item"
+      >
         <svg
           aria-hidden="true"
           class="svg-inline--fa fa-circle-info "
@@ -33,7 +42,7 @@ exports[`PropertyCard renders correctly 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="svg-inline--fa fa-house icon"
+          class="svg-inline--fa fa-house "
           data-icon="house"
           data-prefix="fas"
           focusable="false"
@@ -53,7 +62,7 @@ exports[`PropertyCard renders correctly 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="svg-inline--fa fa-bed icon"
+          class="svg-inline--fa fa-bed "
           data-icon="bed"
           data-prefix="fas"
           focusable="false"
@@ -66,14 +75,10 @@ exports[`PropertyCard renders correctly 1`] = `
             fill="currentColor"
           />
         </svg>
-         2
-      </li>
-      <li
-        class="property-card__list__item"
-      >
+         2 bed | 
         <svg
           aria-hidden="true"
-          class="svg-inline--fa fa-bath icon"
+          class="svg-inline--fa fa-bath "
           data-icon="bath"
           data-prefix="fas"
           focusable="false"
@@ -86,14 +91,14 @@ exports[`PropertyCard renders correctly 1`] = `
             fill="currentColor"
           />
         </svg>
-         1
+         1 bath
       </li>
       <li
         class="property-card__list__item"
       >
         <svg
           aria-hidden="true"
-          class="svg-inline--fa fa-sterling-sign icon"
+          class="svg-inline--fa fa-sterling-sign "
           data-icon="sterling-sign"
           data-prefix="fas"
           focusable="false"
@@ -113,7 +118,7 @@ exports[`PropertyCard renders correctly 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="svg-inline--fa fa-location-dot icon"
+          class="svg-inline--fa fa-location-dot "
           data-icon="location-dot"
           data-prefix="fas"
           focusable="false"
@@ -132,6 +137,7 @@ exports[`PropertyCard renders correctly 1`] = `
         class="property-card__list__item"
       >
         <a
+          class="email-link"
           href="mailto:undefined"
         >
           <svg
@@ -149,8 +155,8 @@ exports[`PropertyCard renders correctly 1`] = `
               fill="currentColor"
             />
           </svg>
+           Email
         </a>
-         Email
       </li>
     </ul>
   </div>

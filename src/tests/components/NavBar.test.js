@@ -21,7 +21,7 @@ describe("NavBar", () => {
       </MemoryRouter>
     );
 
-    const viewPropertiesLink = screen.getByText("View Properties");
+    const viewPropertiesLink = screen.getByText("View all Properties");
 
     expect(viewPropertiesLink).toBeInTheDocument();
   });

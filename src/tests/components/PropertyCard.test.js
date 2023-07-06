@@ -55,28 +55,16 @@ describe("PropertyCard", () => {
     expect(type).toBeInTheDocument();
   });
 
-  it("renders bedrooms", () => {
+  it("renders correct number of list items", () => {
     render(
       <MemoryRouter>
-        <PropertyCard bedrooms={validProps.bedrooms} />
+        <PropertyCard props={validProps} />
       </MemoryRouter>
     );
 
-    const bedrooms = screen.getByText("2");
+    const listItems = screen.getAllByRole("listitem");
 
-    expect(bedrooms).toBeInTheDocument();
-  });
-
-  it("renders bathrooms", () => {
-    render(
-      <MemoryRouter>
-        <PropertyCard bathrooms={validProps.bathrooms} />
-      </MemoryRouter>
-    );
-
-    const bathrooms = screen.getByText("1");
-
-    expect(bathrooms).toBeInTheDocument();
+    expect(listItems).toHaveLength(7);
   });
 
   it("renders price", () => {

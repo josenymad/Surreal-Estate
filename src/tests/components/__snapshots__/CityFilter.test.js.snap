@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`City Filter renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="CityFilter"
+  >
+    <a
+      class="city-filter__link"
+      href="/?query={\\"city\\": \\"Manchester\\" }"
+    >
+      Manchester
+    </a>
+    <a
+      class="city-filter__link"
+      href="/?query={\\"city\\": \\"Leeds\\" }"
+    >
+      Leeds
+    </a>
+    <a
+      class="city-filter__link"
+      href="/?query={\\"city\\": \\"Sheffield\\" }"
+    >
+      Sheffield
+    </a>
+    <a
+      class="city-filter__link"
+      href="/?query={\\"city\\": \\"Liverpool\\" }"
+    >
+      Liverpool
+    </a>
+  </div>
+</DocumentFragment>
+`;
