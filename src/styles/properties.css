@@ -2,16 +2,8 @@
     font-weight: 400;
 }
 
-.city-filter {
-    margin-bottom: 1em;
-    background-color: #cecece;
-    max-width: fit-content;
-    margin: auto;
-    padding: 0.6em;
-    border-radius: 9px;
-}
-
 .properties__container {
+    margin-top: 1em;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: start;

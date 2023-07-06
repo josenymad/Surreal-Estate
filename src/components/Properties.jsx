@@ -23,9 +23,7 @@ const Properties = () => {
   return (
     <div className="properties">
       <h3 className="properties__header">Properties Page</h3>
-      <div className="city-filter">
-        <FilterSortSearch setCity={setCity} />
-      </div>
+      <FilterSortSearch setCity={setCity} />
       {properties.length > 0 ? (
         <div className="properties__container">
           {properties.map((property) => (

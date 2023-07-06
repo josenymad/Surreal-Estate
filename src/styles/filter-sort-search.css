@@ -1,3 +1,25 @@
-.city-filter__link {
+.filter-sort-search {
+    background-color: #cecece;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 90%;
+    margin: auto;
+    padding: 0.6em;
+    border-radius: 9px;
+}
+
+.city-filter__label, .price-sort__label {
+    margin-top: 0;
+}
+
+.city-filter__link, .price-sort__link {
     margin: 0.6em;
+}
+
+.search-input {
+    padding: 0.3em;
+}
+
+.search-button {
+    margin-left: 0.3em;
 }
