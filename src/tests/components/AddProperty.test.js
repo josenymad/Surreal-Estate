@@ -26,76 +26,74 @@ describe("Add Property", () => {
     expect(header).toBeInTheDocument();
   });
 
-  it("renders 'Property Title:'", () => {
+  it("renders 'Property Title'", () => {
     render(
       <MemoryRouter>
         <AddProperty />
       </MemoryRouter>
     );
 
-    const propertyTitleLabel = screen.getByLabelText("Property Title:");
+    const propertyTitleLabel = screen.getByLabelText("Property Title");
 
     expect(propertyTitleLabel).toBeInTheDocument();
   });
 
-  it("renders 'Property Type:'", () => {
+  it("renders 'Property Type'", () => {
     render(
       <MemoryRouter>
         <AddProperty />
       </MemoryRouter>
     );
 
-    const propertyTypeLabel = screen.getByLabelText("Property Type:");
+    const propertyTypeLabel = screen.getByLabelText("Property Type");
 
     expect(propertyTypeLabel).toBeInTheDocument();
   });
 
-  it("renders 'Number of bedrooms:'", () => {
+  it("renders 'Number of bedrooms'", () => {
     render(
       <MemoryRouter>
         <AddProperty />
       </MemoryRouter>
     );
 
-    const numberOfBedroomsLabel = screen.getByLabelText("Number of bedrooms:");
+    const numberOfBedroomsLabel = screen.getByLabelText("Number of bedrooms");
 
     expect(numberOfBedroomsLabel).toBeInTheDocument();
   });
 
-  it("renders 'Number of bathrooms:'", () => {
+  it("renders 'Number of bathrooms'", () => {
     render(
       <MemoryRouter>
         <AddProperty />
       </MemoryRouter>
     );
 
-    const numberOfBathroomsLabel = screen.getByLabelText(
-      "Number of bathrooms:"
-    );
+    const numberOfBathroomsLabel = screen.getByLabelText("Number of bathrooms");
 
     expect(numberOfBathroomsLabel).toBeInTheDocument();
   });
 
-  it("renders 'City:'", () => {
+  it("renders 'City'", () => {
     render(
       <MemoryRouter>
         <AddProperty />
       </MemoryRouter>
     );
 
-    const cityLabel = screen.getByLabelText("City:");
+    const cityLabel = screen.getByLabelText("City");
 
     expect(cityLabel).toBeInTheDocument();
   });
 
-  it("renders 'Email:'", () => {
+  it("renders 'Email'", () => {
     render(
       <MemoryRouter>
         <AddProperty />
       </MemoryRouter>
     );
 
-    const emailLabel = screen.getByLabelText("Email:");
+    const emailLabel = screen.getByLabelText("Email");
 
     expect(emailLabel).toBeInTheDocument();
   });
