@@ -71,24 +71,26 @@ const FilterSortSearch = ({ setCity }) => {
           High to Low
         </Link>
       </div>
-      <form className="search-form" onSubmit={handleSearch}>
-        <label htmlFor="search" className="search-label">
-          Search{" "}
-        </label>
-        <div className="search__input__button">
-          <input
-            id="search"
-            placeholder="bungalow"
-            className="search-input"
-            value={query}
-            type="search"
-            onChange={handleInputChange}
-          />
-          <button type="submit" className="search-button">
-            <FontAwesomeIcon icon={faMagnifyingGlass} />
-          </button>
-        </div>
-      </form>
+      <div className="search-form">
+        <form onSubmit={handleSearch}>
+          <label htmlFor="search" className="search-label">
+            Search{" "}
+          </label>
+          <div className="search__input__button">
+            <input
+              id="search"
+              placeholder="bungalow"
+              className="search-input"
+              value={query}
+              type="search"
+              onChange={handleInputChange}
+            />
+            <button type="submit" className="search-button">
+              <FontAwesomeIcon icon={faMagnifyingGlass} />
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };

@@ -10,13 +10,19 @@
     row-gap: 3em;
 }
 
+@media screen and (max-width: 1000px) {
+    .properties__container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .properties__container {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
     .properties__container {
         grid-template-columns: 1fr;
     }

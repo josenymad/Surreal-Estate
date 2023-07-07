@@ -23,3 +23,22 @@
 .search-button {
     margin-left: 0.3em;
 }
+
+@media screen and (max-width: 900px) {
+    .filter-sort-search {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 1.5em;
+    }   
+    .search-form {
+        grid-column: 1 / span 2;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .filter-sort-search {
+        grid-template-columns: 1fr;
+    } 
+    .search-form {
+        grid-column: 1 / span 1;
+    }   
+}

@@ -5,15 +5,22 @@
 .add-property__form {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    max-width: fit-content;
+    align-items: center;
+    max-width: 300px;
     margin: auto;
+    background-color: #cecece;
+    padding: 1em;
+    border-radius: 15px;
+}
+
+.add-property__form__label {
+    align-self: flex-start;
 }
 
 .form__input {
     margin: 0.6em;
     padding: 0.3em;
-    width: 120px;
+    width: 90%;
 }
 
 button {
