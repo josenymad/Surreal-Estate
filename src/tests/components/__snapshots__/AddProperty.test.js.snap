@@ -24,6 +24,7 @@ exports[`Add Property renders correctly 1`] = `
         id="title"
         name="title"
         placeholder="2 bedroom flat"
+        required=""
         value=""
       />
       <label
@@ -89,6 +90,7 @@ exports[`Add Property renders correctly 1`] = `
         id="bedrooms"
         name="bedrooms"
         placeholder="2"
+        required=""
         value=""
       />
       <label
@@ -102,6 +104,7 @@ exports[`Add Property renders correctly 1`] = `
         id="bathrooms"
         name="bathrooms"
         placeholder="1"
+        required=""
         value=""
       />
       <label
@@ -115,6 +118,7 @@ exports[`Add Property renders correctly 1`] = `
         id="price"
         name="price"
         placeholder="150000"
+        required=""
         value=""
       />
       <label
@@ -165,6 +169,8 @@ exports[`Add Property renders correctly 1`] = `
         id="email"
         name="email"
         placeholder="contact@email.com"
+        required=""
+        type="email"
         value=""
       />
       <button

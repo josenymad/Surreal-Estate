@@ -46,6 +46,7 @@ const AddProperty = () => {
           onChange={handleFieldChange}
           placeholder="2 bedroom flat"
           className="form__input"
+          required
         />
         <label htmlFor="type" className="add-property__form__label">
           Property Type{}
@@ -76,6 +77,7 @@ const AddProperty = () => {
           onChange={handleFieldChange}
           placeholder="2"
           className="form__input"
+          required
         />
         <label htmlFor="bathrooms" className="add-property__form__label">
           Number of bathrooms{}
@@ -87,6 +89,7 @@ const AddProperty = () => {
           onChange={handleFieldChange}
           placeholder="1"
           className="form__input"
+          required
         />
         <label htmlFor="price" className="add-property__form__label">
           Property value{}
@@ -98,6 +101,7 @@ const AddProperty = () => {
           onChange={handleFieldChange}
           placeholder="150000"
           className="form__input"
+          required
         />
         <label htmlFor="city" className="add-property__form__label">
           City{}
@@ -125,6 +129,8 @@ const AddProperty = () => {
           onChange={handleFieldChange}
           placeholder="contact@email.com"
           className="form__input"
+          required
+          type="email"
         />
         <button type="submit" className="add-property__form__button">
           Add

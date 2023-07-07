@@ -6,3 +6,12 @@
   height: 60px;
   width: auto;
 }
+
+.App__log-out__button, .App__log-in__button {
+  padding: 0.6em;
+  font-weight: 600;
+  background-color: black;
+  color: white;
+  border-style: none;
+  border-radius: 3px;
+}

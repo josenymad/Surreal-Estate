@@ -23,7 +23,7 @@
     width: 90%;
 }
 
-button {
+.add-property__form__button {
     align-self: center;
     font-weight: 600;
     margin-top: 1em;
