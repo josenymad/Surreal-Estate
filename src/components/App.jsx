@@ -43,10 +43,10 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="App__header">
-        Surreal <img src={logo} alt="Logo" className="App__header__logo" />{" "}
-        Estate
-      </h1>
+      <div className="App__banner">
+        <img src={logo} alt="Logo" className="App__header__logo" />
+        <h1 className="App__header">Surreal Estate</h1>
+      </div>
       {profile ? (
         <div className="App__logged-in">
           <button

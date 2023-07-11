@@ -2,6 +2,16 @@
   text-align: center;
 }
 
+.App__banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App__header {
+  margin-left: 0.6em;
+}
+
 .App__header__logo {
   height: 60px;
   width: auto;
