@@ -5,12 +5,24 @@ import PropertyCard from "./PropertyCard";
 import getProperties from "../requests/getProperties";
 import Alert from "./Alert";
 import FilterSortSearch from "./FilterSortSearch";
+import postFavourite from "../requests/postFavourite";
 
-const Properties = () => {
+const Properties = ({ profileId }) => {
   const [properties, setProperties] = useState([]);
   const [alert, setAlert] = useState({ message: "", isSuccess: false });
+  const [heartAlert, setHeartAlert] = useState({
+    message: "Save",
+    isSuccess: false,
+  });
   const { search } = useLocation();
   const [city, setCity] = useState("");
+
+  const handleSaveProperty = (propertyId) => {
+    postFavourite(
+      { propertyListing: propertyId, fbUserId: profileId },
+      setHeartAlert
+    );
+  };
 
   useEffect(() => {
     getProperties(setProperties, setAlert, search);
@@ -28,7 +40,12 @@ const Properties = () => {
         <div className="properties__container">
           {properties.map((property) => (
             <div key={property._id} className="property-card">
-              <PropertyCard {...property} />
+              <PropertyCard
+                {...property}
+                profileId={profileId}
+                onSaveProperty={handleSaveProperty}
+                heartAlert={heartAlert}
+              />
             </div>
           ))}
         </div>

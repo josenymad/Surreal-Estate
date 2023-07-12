@@ -59,7 +59,7 @@ const App = () => {
             <NavBar />
           </div>
           <Routes>
-            <Route path="/" element={<Properties />} />
+            <Route path="/" element={<Properties profileId={profile.id} />} />
             <Route path="/add-property" element={<AddProperty />} />
           </Routes>
         </div>
