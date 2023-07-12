@@ -17,6 +17,18 @@
   width: auto;
 }
 
+.App__logged-in-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 1em;
+  align-items: center;
+}
+
+.profile-picture {
+  border-radius: 60px;
+  justify-self: center;
+}
+
 .App__log-out__button, .App__log-in__button {
   padding: 0.6em;
   font-weight: 600;

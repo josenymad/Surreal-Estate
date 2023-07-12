@@ -14,6 +14,10 @@ const App = () => {
   const [profile, setProfile] = useState([]);
   const [alert, setAlert] = useState({ message: "", isSuccess: false });
 
+  useEffect(() => {
+    getProfile(user, setProfile, setAlert);
+  }, [user]);
+
   const logIn = useGoogleLogin({
     onSuccess: (codeResponse) => setUser(codeResponse),
     onError: (error) =>
@@ -22,10 +26,6 @@ const App = () => {
         isSuccess: false,
       }),
   });
-
-  useEffect(() => {
-    getProfile(user, setProfile, setAlert);
-  }, [user]);
 
   const logOut = () => {
     googleLogout();
@@ -40,14 +40,24 @@ const App = () => {
       </div>
       {profile ? (
         <div className="App__logged-in">
-          <button
-            className="App__log-out__button"
-            onClick={logOut}
-            type="button"
-          >
-            Log out
-          </button>
-          <NavBar />
+          <div className="App__logged-in-container">
+            <div className="App__account">
+              <p className="App__profile-name">Signed in as {profile.name}</p>
+              <button
+                className="App__log-out__button"
+                onClick={logOut}
+                type="button"
+              >
+                Log out
+              </button>
+            </div>
+            <img
+              src={profile ? profile.picture : ""}
+              alt="profile"
+              className="profile-picture"
+            />
+            <NavBar />
+          </div>
           <Routes>
             <Route path="/" element={<Properties />} />
             <Route path="/add-property" element={<AddProperty />} />
