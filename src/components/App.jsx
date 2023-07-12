@@ -2,38 +2,29 @@ import React, { useState, useEffect } from "react";
 import "../styles/app.css";
 import { Route, Routes } from "react-router-dom";
 import { googleLogout, useGoogleLogin } from "@react-oauth/google";
-import axios from "axios";
+import getProfile from "../requests/getProfile";
 import NavBar from "./NavBar";
 import Properties from "./Properties";
 import AddProperty from "./AddProperty";
+import Alert from "./Alert";
 import logo from "../images/logo.jpeg";
 
 const App = () => {
   const [user, setUser] = useState([]);
   const [profile, setProfile] = useState([]);
+  const [alert, setAlert] = useState({ message: "", isSuccess: false });
 
   const logIn = useGoogleLogin({
     onSuccess: (codeResponse) => setUser(codeResponse),
-    onError: (error) => console.log(error),
+    onError: (error) =>
+      setAlert({
+        message: `Sorry, could not log in due to this error: ${error}`,
+        isSuccess: false,
+      }),
   });
 
   useEffect(() => {
-    if (user) {
-      axios
-        .get(
-          `https://www.googleapis.com/oauth2/v1/userinfo?access_token=${user.access_token}`,
-          {
-            headers: {
-              Authorization: `Bearer ${user.access_token}`,
-              Accept: "application/json",
-            },
-          }
-        )
-        .then((res) => {
-          setProfile(res.data);
-        })
-        .catch((err) => console.log(err));
-    }
+    getProfile(user, setProfile, setAlert);
   }, [user]);
 
   const logOut = () => {
@@ -63,13 +54,16 @@ const App = () => {
           </Routes>
         </div>
       ) : (
-        <button
-          className="App__log-in__button"
-          onClick={() => logIn()}
-          type="button"
-        >
-          Google Login
-        </button>
+        <div className="App__logged-out">
+          <button
+            className="App__log-in__button"
+            onClick={() => logIn()}
+            type="button"
+          >
+            Google Login
+          </button>
+          <Alert message={alert.message} success={alert.isSuccess} />
+        </div>
       )}
     </div>
   );
