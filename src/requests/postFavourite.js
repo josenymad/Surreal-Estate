@@ -5,10 +5,14 @@ const postFavourite = async (favouriteProperty, setHeartAlert) => {
 
   try {
     await axios.post(endpoint, favouriteProperty);
-    setHeartAlert({ message: "Saved", isSuccess: true });
+    setHeartAlert({
+      message: "Saved",
+      isSuccess: true,
+      propertyKey: favouriteProperty.propertyListing,
+    });
   } catch (error) {
     setHeartAlert({
-      message: "Save",
+      message: error,
       isSuccess: false,
     });
   }

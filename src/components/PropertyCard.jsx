@@ -67,14 +67,14 @@ const PropertyCard = ({
             onClick={() => onSaveProperty(_id)}
             className="save-button"
           >
-            {heartAlert.isSuccess ? (
+            {_id === heartAlert.propertyKey ? (
               <>
                 <FontAwesomeIcon icon={faHeartCircleCheck} />{" "}
                 {heartAlert.message}
               </>
             ) : (
               <>
-                <FontAwesomeIcon icon={faHeart} /> {heartAlert.message}
+                <FontAwesomeIcon icon={faHeart} /> Save
               </>
             )}
           </button>

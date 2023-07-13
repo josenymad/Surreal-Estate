@@ -13,6 +13,7 @@ const Properties = ({ profileId }) => {
   const [heartAlert, setHeartAlert] = useState({
     message: "Save",
     isSuccess: false,
+    propertyKey: "",
   });
   const { search } = useLocation();
   const [city, setCity] = useState("");
