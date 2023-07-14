@@ -1,6 +1,6 @@
 # Surreal Estate Property Search Engine
 
-The final product of this project is a property search engine similar to RightMove or Zoopla. It is a work in progress.
+The final product of this project is a property search engine similar to RightMove or Zoopla.
 
 ## Packages & Frameworks
 
