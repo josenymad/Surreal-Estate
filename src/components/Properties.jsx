@@ -9,19 +9,18 @@ import postFavourite from "../requests/postFavourite";
 
 const Properties = ({ profileId }) => {
   const [properties, setProperties] = useState([]);
-  const [alert, setAlert] = useState({ message: "", isSuccess: false });
-  const [heartAlert, setHeartAlert] = useState({
-    message: "Save",
+  const [alert, setAlert] = useState({
+    message: "",
     isSuccess: false,
-    propertyKey: "",
   });
+  const [propertyKey, setPropertyKey] = useState("");
   const { search } = useLocation();
   const [city, setCity] = useState("");
 
   const handleSaveProperty = (propertyId) => {
     postFavourite(
       { propertyListing: propertyId, fbUserId: profileId },
-      setHeartAlert
+      setPropertyKey
     );
   };
 
@@ -45,7 +44,7 @@ const Properties = ({ profileId }) => {
                 {...property}
                 profileId={profileId}
                 onSaveProperty={handleSaveProperty}
-                heartAlert={heartAlert}
+                propertyKey={propertyKey}
               />
             </div>
           ))}

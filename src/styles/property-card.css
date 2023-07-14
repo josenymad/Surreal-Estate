@@ -24,3 +24,8 @@
 .email-link {
     text-decoration: none;
 }
+
+.save-button {
+    padding: 0.6em;
+    border-radius: 9px;
+}

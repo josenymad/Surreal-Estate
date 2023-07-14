@@ -22,37 +22,54 @@ exports[`App renders correctly 1`] = `
     <div
       class="App__logged-in"
     >
-      <button
-        class="App__log-out__button"
-        type="button"
-      >
-        Log out
-      </button>
       <div
-        class="navbar"
+        class="App__logged-in-container"
       >
-        <ul
-          class="navbar__links"
+        <div
+          class="App__account"
         >
-          <li
-            class="navbar__links__item"
+          <p
+            class="App__profile-name"
           >
-            <a
-              href="/"
-            >
-              View all Properties
-            </a>
-          </li>
-          <li
-            class="navbar__links__item"
+            Signed in as 
+          </p>
+          <button
+            class="App__log-out__button"
+            type="button"
           >
-            <a
-              href="/add-property"
+            Log out
+          </button>
+        </div>
+        <img
+          alt="profile"
+          class="profile-picture"
+        />
+        <div
+          class="navbar"
+        >
+          <ul
+            class="navbar__links"
+          >
+            <li
+              class="navbar__links__item"
             >
-              Add a Property
-            </a>
-          </li>
-        </ul>
+              <a
+                href="/"
+              >
+                View all Properties
+              </a>
+            </li>
+            <li
+              class="navbar__links__item"
+            >
+              <a
+                href="/add-property"
+              >
+                Add a Property
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div
         class="properties"
