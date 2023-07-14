@@ -14,3 +14,8 @@ The final product of this project is a property search engine similar to RightMo
 - Navigate to the directory created on your machine, and run `npm install` to download the dependencies.
 - To load the app on your browser, run `npm start`.
 - You can run the tests using `npm test`.
+
+## Demo
+
+https://github.com/josenymad/Surreal-Estate/assets/124208499/cbd8dc0a-4032-4bbb-951e-99d9fb318cea
+
