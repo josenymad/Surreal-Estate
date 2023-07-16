@@ -12,6 +12,7 @@ The final product of this project is a property search engine similar to RightMo
 
 - Fork and clone this repo.
 - Navigate to the directory created on your machine, and run `npm install` to download the dependencies.
+- Follow the instructions to use the [API](https://github.com/josenymad/surreal-estate-api)
 - To load the app on your browser, run `npm start`.
 - You can run the tests using `npm test`.
 
